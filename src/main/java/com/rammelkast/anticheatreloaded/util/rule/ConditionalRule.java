@@ -118,7 +118,7 @@ public class ConditionalRule extends Rule {
 		} else {
 			ENGINE = null;
 			Bukkit.getConsoleSender().sendMessage(AntiCheatReloaded.PREFIX + ChatColor.RED
-					+ "Java 15+ currently does not support ACR's rule engine. Rules.yml is disabled.");
+					+ "Java 15+ currently does not support DAC's rule engine. Rules.yml is disabled.");
 		}
 	}
 }

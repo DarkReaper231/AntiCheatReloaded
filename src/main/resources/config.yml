@@ -1,49 +1,49 @@
-# AntiCheatReloaded configuration file
+# DarkAC konfigurační soubor
 spam:
   chat:
-    # Should AntiCheatReloaded block players spamming messages in chat?
+    # Měl by DarkAC blokovat spamování zprávy v chatu?
     block-speed: true
     block-repetition: true
-    # Valid actions = NONE,KICK,BAN,COMMAND[command]
+    # Platné akce = NONE,KICK,BAN,COMMAND[příkaz]
     action-one: KICK
     action-two: BAN
-  # Should AntiCheatReloaded block players spamming commands in chat?
+  # Měl by DarkAC blokovat spamování příkazů v chatu?
   command:
     block-speed: true
     block-repetition: true
-    # Valid actions = NONE,KICK,BAN,COMMAND[command]
+    # Platné akce = NONE,KICK,BAN,COMMAND[příkaz]
     action-one: KICK
     action-two: BAN
 system:
-  # Should AntiCheatReloaded log ALL failed checks to console?
+  # Měl by být DarkAC logovat všechny neúspěšné kontroly do konzole?
   log-to-console: false
-  # Should AntiCheatReloaded log to file?
+  # Měl by být DarkAC logovat do souboru?
   log-to-file: true
-  # Should AntiCheatReloaded display extra debug information when starting?
+  # Měl by být DarkAC zobrazovat další informace ladění při startu?
   verbose-startup: false
-  # If silent mode is on, players will not be stopped when they try to hack, and AntiCheatReloaded will do everything possible to keep them unaware of their rising hack level.
-  # However, alerts will still be sent to console and to admins online, and events will still take place.
+  # Pokud je tichý režim zapnutý, hráči nebudou blokováni, když se snaží hackovat a DarkAC udělá vše, co je možné udržet si vědomí jejich rostoucí úrovně hackingu.
+  # Nicméně, výstrahy budou odeslány do konzole a jakémukoliv online administrátorovi a události budou stále probíhat.
   silent-mode: false
-  # Disable broadcasts about why a player was kicked
+  # Zakázat vysílání o tom, proč byl hráč vyhozen
   disable-broadcast: false
-  # Should ops be exempt from all checks?
+  # Měl by být OP hráč osvobozen od všech kontrol?
   exempt-op: false
-  # Should AntiCheatReloaded track plugins in its own registered events?
+  # Měl by DarkAC trackovat ve vlastních registrovaných událostech?
   event-chains: true
-  # Should Enterprise options be enabled? Only set this to true if you're an advanced user.
+  # Měly by být povoleny možnosti podnikání? Pokud jste rozšířeným uživatelem, nastavte pouze true.
   enterprise: false
-  # Running AntiCheatReloaded in debug mode will send alerts to the cheating players and enable debug logging
-  # Use this when locating and/or reporting false positives or when testing AntiCheatReloaded
-  # Do NOT enable this in a production environment!
+  # Běží-li DarkAC v režimu ladění odešle upozornění na podvádění hráčů a umožnit protokolování ladění
+  # Použijte toto při lokalizaci nebo hlášení falešně pozitivy nebo při testování DarkAC
+  # Nepovolujte to v podnikatelském prostředí!
   debug-mode: false
-  # To prevent spamming, staff and the console will only be notified every x violations
-  # Minimum value is 1, default is 8
-  # Example with 5: notifications after 5 vl, 10vl, 15vl, etc.
+  # Aby se zabránilo spamování, personál a konzole budou informovány pouze každým porušením
+  # Minimální hodnota je 1, výchozí je 8
+  # Příklad s 5: Oznámení po 5 VL, 10VL, 15VL atd.
   notify-every-vl: 8
-  # Maximum distance a player can be set back
-  # If the last known valid location is further away than this,
-  # the player will be rubberbanded at their current location
-  # Minimum value is 5, default is 50
+  # Maximální vzdálenost setbacku lze nastavit
+  # Pokud je poslední známé platné umístění dál než toto,
+  # Setback bude gumenbanded na jejich aktuální poloze
+  # Minimální hodnota je 5, výchozí je 50
   max-setback-distance: 50
 disable-in:
 - example-world

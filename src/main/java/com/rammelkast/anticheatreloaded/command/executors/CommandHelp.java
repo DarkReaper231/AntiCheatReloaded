@@ -26,19 +26,19 @@ import com.rammelkast.anticheatreloaded.util.Permission;
 
 public class CommandHelp extends CommandBase {
 
-    private static final String NAME = "AntiCheatReloaded Help";
+    private static final String NAME = "DarkAC Help";
     private static final String COMMAND = "help";
     private static final String USAGE = "anticheat help";
     private static final Permission PERMISSION = Permission.SYSTEM_HELP;
     private static final String[] HELP = {
-    		GOLD + "/acr " + GRAY + "help",
-    		GOLD + "/acr " + GRAY + "reload",
-            GOLD + "/acr " + GRAY + "version",
-            GOLD + "/acr " + GRAY + "mute",
-    		GOLD + "/acr " + GRAY + "checks",
-            GOLD + "/acr " + GRAY + "log " + WHITE + "[file/console] [on/off]",
-            GOLD + "/acr " + GRAY + "report " + WHITE + "[group/user]",
-            GOLD + "/acr " + GRAY + "reset " + WHITE + "[user]",
+    		GOLD + "/dac " + GRAY + "help",
+    		GOLD + "/dac " + GRAY + "reload",
+            GOLD + "/dac " + GRAY + "version",
+            GOLD + "/dac " + GRAY + "mute",
+    		GOLD + "/dac " + GRAY + "checks",
+            GOLD + "/dac " + GRAY + "log " + WHITE + "[file/console] [on/off]",
+            GOLD + "/dac " + GRAY + "report " + WHITE + "[group/user]",
+            GOLD + "/dac " + GRAY + "reset " + WHITE + "[user]",
     };
 
     public CommandHelp() {

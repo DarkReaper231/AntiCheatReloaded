@@ -54,7 +54,7 @@ import lombok.Getter;
 
 public final class AntiCheatReloaded extends JavaPlugin {
 
-	public static final String PREFIX = ChatColor.GOLD + "" + ChatColor.BOLD + "ACR " + ChatColor.DARK_GRAY + "> "
+	public static final String PREFIX = ChatColor.GOLD + "" + ChatColor.BOLD + "DAC " + ChatColor.DARK_GRAY + "> "
 			+ ChatColor.GRAY;
 	public static final List<UUID> MUTE_ENABLED_MODS = new ArrayList<UUID>();
 
@@ -91,7 +91,7 @@ public final class AntiCheatReloaded extends JavaPlugin {
 		// Check for ProtocolLib
 		if (Bukkit.getPluginManager().getPlugin("ProtocolLib") == null) {
 			Bukkit.getConsoleSender().sendMessage(PREFIX + ChatColor.RED
-					+ "ProtocolLib not found! AntiCheatReloaded requires ProtocolLib to work, please download and install it.");
+					+ "ProtocolLib plugin nebyl nalezen! DarkAC potřebuje ProtocolLib plugin, prosím nainstalujte jej.");
 			Bukkit.getPluginManager().disablePlugin(this);
 			return;
 		}
