@@ -2,9 +2,9 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.rammelkast.anticheatreloaded</groupId>
-    <artifactId>AntiCheatReloaded</artifactId>
+    <artifactId>DarkAC</artifactId>
     <version>1.11.0-PRE</version>
-    <name>AntiCheatReloaded</name>
+    <name>DarkAC</name>
     <url>https://www.spigotmc.org/resources/anticheatreloaded.23799/</url>
     <properties>
         <project.build.version>${project.version}</project.build.version>
@@ -80,7 +80,7 @@
                 </executions>
             </plugin>
         </plugins>
-        <finalName>AntiCheatReloaded</finalName>
+        <finalName>DarkAC</finalName>
         <extensions>
             <extension>
                 <groupId>org.apache.maven.wagon</groupId>
@@ -100,6 +100,7 @@
             <groupId>com.github.dmulloy2</groupId>
             <artifactId>ProtocolLib</artifactId>
             <version>4.8.0</version>
+            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>org.spigotmc</groupId>
