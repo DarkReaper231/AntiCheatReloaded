@@ -71,7 +71,7 @@ public class LoggingManager {
     }
 
     public void debugLog(String message) {
-        Bukkit.getConsoleSender().sendMessage(ChatColor.GOLD + "" + ChatColor.BOLD + "ACR " + ChatColor.GRAY + message);
+        Bukkit.getConsoleSender().sendMessage(ChatColor.GOLD + "" + ChatColor.BOLD + "DAC " + ChatColor.GRAY + message);
         logToLogs(message);
     }
 

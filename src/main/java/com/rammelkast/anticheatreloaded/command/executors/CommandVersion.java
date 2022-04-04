@@ -29,7 +29,7 @@ import com.rammelkast.anticheatreloaded.util.UpdateManager;
 
 public class CommandVersion extends CommandBase {
 
-	private static final String NAME = "AntiCheatReloaded Version";
+	private static final String NAME = "DarkAC Version";
 	private static final String COMMAND = "version";
 	private static final String USAGE = "anticheat version";
 	private static final Permission PERMISSION = Permission.SYSTEM_VERSION;
@@ -51,7 +51,7 @@ public class CommandVersion extends CommandBase {
 				status = GOLD + "up-to-date";
 			}
 		}
-		cs.sendMessage(GOLD + "" + ChatColor.BOLD + "ACR " + GRAY + "You are running version " + GOLD
+		cs.sendMessage(GOLD + "" + ChatColor.BOLD + "DAC " + GRAY + "You are running version " + GOLD
 				+ updateManager.getCurrentVersion() + GRAY + ". The latest version is " + GOLD
 				+ updateManager.getLatestVersion() + GRAY + ". This means you are " + status + GRAY + ".");
 	}

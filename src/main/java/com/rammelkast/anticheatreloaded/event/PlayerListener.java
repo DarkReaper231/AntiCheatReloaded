@@ -383,8 +383,8 @@ public final class PlayerListener extends EventListener {
 		MANAGER.addEvent(event.getEventName(), event.getHandlers().getRegisteredListeners());
 
 		if (player.hasPermission("anticheat.admin") && !AntiCheatReloaded.getUpdateManager().isLatest()) {
-			player.sendMessage(ChatColor.GOLD + "" + ChatColor.BOLD + "ACR " + ChatColor.GRAY
-					+ "Your version of AntiCheatReloaded is outdated! You can download "
+			player.sendMessage(ChatColor.GOLD + "" + ChatColor.BOLD + "DAC " + ChatColor.GRAY
+					+ "Your version of DarkAC is outdated! You can download "
 					+ AntiCheatReloaded.getUpdateManager().getLatestVersion()
 					+ " from the Spigot forums or DevBukkit.");
 		}

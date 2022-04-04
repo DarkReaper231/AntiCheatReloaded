@@ -66,8 +66,8 @@ public class CommandBase {
             execute(cs, args);
 		} else {
 			if (args == null) {
-				cs.sendMessage(GOLD + "" + ChatColor.BOLD + "ACR" + ChatColor.DARK_GRAY + " > "
-						+ ChatColor.GRAY + "Running " + GOLD + "AntiCheatReloaded " + GRAY + "version "
+				cs.sendMessage(GOLD + "" + ChatColor.BOLD + "DAC" + ChatColor.DARK_GRAY + " > "
+						+ ChatColor.GRAY + "Running " + GOLD + "DarkAC " + GRAY + "version "
 						+ GOLD + AntiCheatReloaded.getVersion());
 			} else {
 				cs.sendMessage(PERMISSIONS_ERROR + " (" + WHITE + permission.toString() + RED + ")");
@@ -80,7 +80,7 @@ public class CommandBase {
     }
 
     public void sendHelp(CommandSender cs) {
-        cs.sendMessage(GOLD + "" + ChatColor.BOLD + "AntiCheatReloaded" + ChatColor.DARK_GRAY + " > " + ChatColor.GRAY + "Help Menu");
+        cs.sendMessage(GOLD + "" + ChatColor.BOLD + "DarkAC" + ChatColor.DARK_GRAY + " > " + ChatColor.GRAY + "Help Menu");
         cs.sendMessage(GOLD + "Usage: " + GRAY + (cs instanceof Player ? "/" : "") + getUsage());
         cs.sendMessage(GOLD + "Permission: " + GRAY + getPermission().toString());
         for (String string : getHelp()) {

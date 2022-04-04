@@ -62,7 +62,7 @@ public final class CheckManager {
         }
         
         if (!checkIgnoreList.isEmpty()) {
-        	Bukkit.getConsoleSender().sendMessage(ChatColor.GOLD + "" + ChatColor.BOLD + "ACR " + ChatColor.DARK_GRAY + "> " + ChatColor.GRAY
+        	Bukkit.getConsoleSender().sendMessage(ChatColor.GOLD + "" + ChatColor.BOLD + "DAC " + ChatColor.DARK_GRAY + "> " + ChatColor.GRAY
 					+ checkIgnoreList.size() + " check(s) have been disabled");
         }
     }

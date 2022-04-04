@@ -30,7 +30,7 @@ import com.rammelkast.anticheatreloaded.util.Permission;
 
 public class CommandMute extends CommandBase {
 
-	private static final String NAME = "AntiCheatReloaded Mute";
+	private static final String NAME = "DarkAC Mute";
 	private static final String COMMAND = "mute";
 	private static final String USAGE = "anticheat mute";
 	private static final Permission PERMISSION = Permission.SYSTEM_MUTE;
@@ -44,16 +44,16 @@ public class CommandMute extends CommandBase {
 	@Override
 	protected void execute(CommandSender cs, String[] args) {
 		if (!(cs instanceof Player)) {
-			cs.sendMessage(ChatColor.BOLD + "" + GOLD + "ACR " + GRAY + "This command is only for players");
+			cs.sendMessage(ChatColor.BOLD + "" + GOLD + "DAC " + GRAY + "This command is only for players");
 			return;
 		}
 		UUID uuid = ((Player) cs).getUniqueId();
 		if (AntiCheatReloaded.MUTE_ENABLED_MODS.contains(uuid)) {
-			cs.sendMessage(GOLD + "" + ChatColor.BOLD + "ACR " + GRAY + "Player alerts have been unmuted");
+			cs.sendMessage(GOLD + "" + ChatColor.BOLD + "DAC " + GRAY + "Player alerts have been unmuted");
 			AntiCheatReloaded.MUTE_ENABLED_MODS.remove(uuid);
 			return;
 		} else {
-			cs.sendMessage(GOLD + "" + ChatColor.BOLD + "ACR " + GRAY + "Player alerts have been muted");
+			cs.sendMessage(GOLD + "" + ChatColor.BOLD + "DAC " + GRAY + "Player alerts have been muted");
 			AntiCheatReloaded.MUTE_ENABLED_MODS.add(uuid);
 			return;
 		}

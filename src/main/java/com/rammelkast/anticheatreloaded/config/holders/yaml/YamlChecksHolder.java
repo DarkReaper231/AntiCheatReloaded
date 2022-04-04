@@ -110,7 +110,7 @@ public class YamlChecksHolder extends ConfigurationFile implements Checks {
 	public boolean isEnabled(CheckType checkType) {
 		// If the root of a check has no enabled or disabled option, it has to be configured on a subcheck basis
 		if (!this.getConfigFile().isConfigurationSection(checkType.getName().toLowerCase())) {
-			Bukkit.getConsoleSender().sendMessage(ChatColor.GOLD + "" + ChatColor.BOLD + "ACR " + ChatColor.RED
+			Bukkit.getConsoleSender().sendMessage(ChatColor.GOLD + "" + ChatColor.BOLD + "DAC " + ChatColor.RED
 					+ "Missing configuration settings for " + checkType.getName() + "!");
 			return true;
 		}
