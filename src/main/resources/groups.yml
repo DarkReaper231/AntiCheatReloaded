@@ -3,6 +3,5 @@
 # Pro vypnutí varování nebo vyhazování, změňte WARN a/nebo KICK na NONE
 groups:
     - 'Nízký : 50 : GREEN : NONE'
-    - 'Střední : 60 : YELLOW : WARN'
-    - 'Vysoký : 75 : RED : KICK'
-    - 'Custom : -1 : GREEN : COMMAND[ban %player%;]'
+    - 'Střední : 60 : YELLOW : NONE'
+    - 'Vysoký : 75 : RED : NONE'
